@@ -28,7 +28,7 @@ namespace GaussLMS.UI
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-            this.ControlBox = false;
+            //this.ControlBox = false;
             this.WindowState = FormWindowState.Maximized;
             this.BringToFront();
         }

@@ -163,7 +163,21 @@ namespace GaussLMS.UI
         {
             var newContributorForm = new CreateNewContributor();
             newContributorForm.Show();
-        }        
+        }
 
+        private void ribbonTimetablesButton_Click(object sender, EventArgs e)
+        {
+            foreach (Form f in this.MdiChildren)
+            {
+                if (f.GetType() == typeof(CalendarForm))
+                {
+                    f.Activate();
+                    return;
+                }
+            }
+            Form calendarForm = new CalendarForm();
+            calendarForm.MdiParent = this;
+            calendarForm.Show();
+        }
     }
 }

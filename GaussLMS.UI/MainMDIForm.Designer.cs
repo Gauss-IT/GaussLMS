@@ -38,41 +38,42 @@ namespace GaussLMS.UI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMDIForm));
             this.imgLstTreeview = new System.Windows.Forms.ImageList(this.components);
             this.ribbon1 = new System.Windows.Forms.Ribbon();
-            this.ribbonOrbMenuItem1 = new System.Windows.Forms.RibbonOrbMenuItem();
             this.ribbonSeparator1 = new System.Windows.Forms.RibbonSeparator();
-            this.ribbonOrbMenuItem2 = new System.Windows.Forms.RibbonOrbMenuItem();
             this.ribbonSeparator2 = new System.Windows.Forms.RibbonSeparator();
             this.ribbonSeparator3 = new System.Windows.Forms.RibbonSeparator();
+            this.ribbonTabUnits = new System.Windows.Forms.RibbonTab();
+            this.ribbonPanelMadrasah = new System.Windows.Forms.RibbonPanel();
+            this.ribbonPanelPrayers = new System.Windows.Forms.RibbonPanel();
+            this.ribbonPanelNewItems = new System.Windows.Forms.RibbonPanel();
+            this.ribbonComboAddNewItem = new System.Windows.Forms.RibbonComboBox();
+            this.ribbonTabActivities = new System.Windows.Forms.RibbonTab();
+            this.ribbonPanelMembership = new System.Windows.Forms.RibbonPanel();
+            this.ribbonComboBox1 = new System.Windows.Forms.RibbonComboBox();
+            this.ribbonPanelZakat = new System.Windows.Forms.RibbonPanel();
+            this.ribbonCheckBox1 = new System.Windows.Forms.RibbonCheckBox();
+            this.ribbonOrbMenuItem1 = new System.Windows.Forms.RibbonOrbMenuItem();
+            this.ribbonOrbMenuItem2 = new System.Windows.Forms.RibbonOrbMenuItem();
             this.ribbonOrbOptionButton1 = new System.Windows.Forms.RibbonOrbOptionButton();
             this.ribbonOrbRecentItem1 = new System.Windows.Forms.RibbonOrbRecentItem();
             this.ribbonOrbRecentItem2 = new System.Windows.Forms.RibbonOrbRecentItem();
             this.ribbonOrbRecentItem3 = new System.Windows.Forms.RibbonOrbRecentItem();
             this.ribbonButton1 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton2 = new System.Windows.Forms.RibbonButton();
-            this.ribbonTabUnits = new System.Windows.Forms.RibbonTab();
-            this.ribbonPanelMadrasah = new System.Windows.Forms.RibbonPanel();
             this.ribbonStudentsButton = new System.Windows.Forms.RibbonButton();
             this.ribbonTeachersButton = new System.Windows.Forms.RibbonButton();
             this.ribbonParentsButton = new System.Windows.Forms.RibbonButton();
-            this.ribbonLessonsButton = new System.Windows.Forms.RibbonButton();
-            this.ribbonPanelPrayers = new System.Windows.Forms.RibbonPanel();
-            this.ribbonPanelNewItems = new System.Windows.Forms.RibbonPanel();
-            this.ribbonComboAddNewItem = new System.Windows.Forms.RibbonComboBox();
+            this.ribbonTimetablesButton = new System.Windows.Forms.RibbonButton();
             this.ribbonButtonNewStudent = new System.Windows.Forms.RibbonButton();
             this.ribbonButtonNewMember = new System.Windows.Forms.RibbonButton();
             this.ribbonButtonNewContributor = new System.Windows.Forms.RibbonButton();
-            this.ribbonTabActivities = new System.Windows.Forms.RibbonTab();
-            this.ribbonPanelMembership = new System.Windows.Forms.RibbonPanel();
             this.ribbonButton5 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton6 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton7 = new System.Windows.Forms.RibbonButton();
-            this.ribbonComboBox1 = new System.Windows.Forms.RibbonComboBox();
-            this.ribbonPanelZakat = new System.Windows.Forms.RibbonPanel();
-            this.ribbonCheckBox1 = new System.Windows.Forms.RibbonCheckBox();
             this.ribbonButton3 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton4 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton9 = new System.Windows.Forms.RibbonButton();
             this.ribbonButton8 = new System.Windows.Forms.RibbonButton();
+            this.ribbonLessonsButton = new System.Windows.Forms.RibbonButton();
             this.SuspendLayout();
             // 
             // imgLstTreeview
@@ -85,7 +86,6 @@ namespace GaussLMS.UI
             // 
             this.ribbon1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ribbon1.Location = new System.Drawing.Point(0, 0);
-            this.ribbon1.Margin = new System.Windows.Forms.Padding(4);
             this.ribbon1.Minimized = false;
             this.ribbon1.Name = "ribbon1";
             // 
@@ -113,13 +113,72 @@ namespace GaussLMS.UI
             this.ribbon1.QuickAcessToolbar.Items.Add(this.ribbonButton1);
             this.ribbon1.QuickAcessToolbar.Items.Add(this.ribbonButton2);
             this.ribbon1.RibbonTabFont = new System.Drawing.Font("Trebuchet MS", 9F);
-            this.ribbon1.Size = new System.Drawing.Size(1131, 185);
+            this.ribbon1.Size = new System.Drawing.Size(848, 150);
             this.ribbon1.TabIndex = 3;
             this.ribbon1.Tabs.Add(this.ribbonTabUnits);
             this.ribbon1.Tabs.Add(this.ribbonTabActivities);
             this.ribbon1.TabsMargin = new System.Windows.Forms.Padding(12, 26, 20, 0);
             this.ribbon1.Text = "Mosque";
             this.ribbon1.ThemeColor = System.Windows.Forms.RibbonTheme.Blue;
+            // 
+            // ribbonTabUnits
+            // 
+            this.ribbonTabUnits.Panels.Add(this.ribbonPanelMadrasah);
+            this.ribbonTabUnits.Panels.Add(this.ribbonPanelPrayers);
+            this.ribbonTabUnits.Panels.Add(this.ribbonPanelNewItems);
+            this.ribbonTabUnits.Text = "Units";
+            // 
+            // ribbonPanelMadrasah
+            // 
+            this.ribbonPanelMadrasah.Items.Add(this.ribbonStudentsButton);
+            this.ribbonPanelMadrasah.Items.Add(this.ribbonTeachersButton);
+            this.ribbonPanelMadrasah.Items.Add(this.ribbonParentsButton);
+            this.ribbonPanelMadrasah.Text = "Staff";
+            // 
+            // ribbonPanelPrayers
+            // 
+            this.ribbonPanelPrayers.Items.Add(this.ribbonTimetablesButton);
+            this.ribbonPanelPrayers.Items.Add(this.ribbonLessonsButton);
+            this.ribbonPanelPrayers.Text = "Lessons";
+            // 
+            // ribbonPanelNewItems
+            // 
+            this.ribbonPanelNewItems.FlowsTo = System.Windows.Forms.RibbonPanelFlowDirection.Right;
+            this.ribbonPanelNewItems.Items.Add(this.ribbonComboAddNewItem);
+            this.ribbonPanelNewItems.Text = "New Items";
+            // 
+            // ribbonComboAddNewItem
+            // 
+            this.ribbonComboAddNewItem.DropDownItems.Add(this.ribbonButtonNewStudent);
+            this.ribbonComboAddNewItem.DropDownItems.Add(this.ribbonButtonNewMember);
+            this.ribbonComboAddNewItem.DropDownItems.Add(this.ribbonButtonNewContributor);
+            this.ribbonComboAddNewItem.DropDownResizable = true;
+            this.ribbonComboAddNewItem.MinSizeMode = System.Windows.Forms.RibbonElementSizeMode.Compact;
+            this.ribbonComboAddNewItem.Text = "Click to add new";
+            this.ribbonComboAddNewItem.TextBoxText = "Click to add new";
+            this.ribbonComboAddNewItem.TextBoxWidth = 130;
+            // 
+            // ribbonTabActivities
+            // 
+            this.ribbonTabActivities.Panels.Add(this.ribbonPanelMembership);
+            this.ribbonTabActivities.Panels.Add(this.ribbonPanelZakat);
+            this.ribbonTabActivities.Text = "Activities";
+            // 
+            // ribbonPanelMembership
+            // 
+            this.ribbonPanelMembership.Items.Add(this.ribbonButton5);
+            this.ribbonPanelMembership.Items.Add(this.ribbonButton6);
+            this.ribbonPanelMembership.Items.Add(this.ribbonButton7);
+            this.ribbonPanelMembership.Items.Add(this.ribbonComboBox1);
+            this.ribbonPanelMembership.Text = "Membership";
+            // 
+            // ribbonComboBox1
+            // 
+            this.ribbonComboBox1.TextBoxText = "";
+            // 
+            // ribbonPanelZakat
+            // 
+            this.ribbonPanelZakat.Text = "Zakat";
             // 
             // ribbonOrbMenuItem1
             // 
@@ -173,21 +232,6 @@ namespace GaussLMS.UI
             this.ribbonButton2.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.SmallImage")));
             this.ribbonButton2.Text = "ribbonButton2";
             // 
-            // ribbonTabUnits
-            // 
-            this.ribbonTabUnits.Panels.Add(this.ribbonPanelMadrasah);
-            this.ribbonTabUnits.Panels.Add(this.ribbonPanelPrayers);
-            this.ribbonTabUnits.Panels.Add(this.ribbonPanelNewItems);
-            this.ribbonTabUnits.Text = "Units";
-            // 
-            // ribbonPanelMadrasah
-            // 
-            this.ribbonPanelMadrasah.Items.Add(this.ribbonStudentsButton);
-            this.ribbonPanelMadrasah.Items.Add(this.ribbonTeachersButton);
-            this.ribbonPanelMadrasah.Items.Add(this.ribbonParentsButton);
-            this.ribbonPanelMadrasah.Items.Add(this.ribbonLessonsButton);
-            this.ribbonPanelMadrasah.Text = "Madrasah";
-            // 
             // ribbonStudentsButton
             // 
             this.ribbonStudentsButton.Image = ((System.Drawing.Image)(resources.GetObject("ribbonStudentsButton.Image")));
@@ -209,33 +253,13 @@ namespace GaussLMS.UI
             this.ribbonParentsButton.Text = "Parents";
             this.ribbonParentsButton.Click += new System.EventHandler(this.ribbonParentsButton_Click);
             // 
-            // ribbonLessonsButton
+            // ribbonTimetablesButton
             // 
-            this.ribbonLessonsButton.Image = ((System.Drawing.Image)(resources.GetObject("ribbonLessonsButton.Image")));
-            this.ribbonLessonsButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonLessonsButton.SmallImage")));
-            this.ribbonLessonsButton.Text = "Lessons";
-            this.ribbonLessonsButton.Click += new System.EventHandler(this.ribbonLessonsButton_Click);
-            // 
-            // ribbonPanelPrayers
-            // 
-            this.ribbonPanelPrayers.Text = "Prayers";
-            // 
-            // ribbonPanelNewItems
-            // 
-            this.ribbonPanelNewItems.FlowsTo = System.Windows.Forms.RibbonPanelFlowDirection.Right;
-            this.ribbonPanelNewItems.Items.Add(this.ribbonComboAddNewItem);
-            this.ribbonPanelNewItems.Text = "New Items";
-            // 
-            // ribbonComboAddNewItem
-            // 
-            this.ribbonComboAddNewItem.DropDownItems.Add(this.ribbonButtonNewStudent);
-            this.ribbonComboAddNewItem.DropDownItems.Add(this.ribbonButtonNewMember);
-            this.ribbonComboAddNewItem.DropDownItems.Add(this.ribbonButtonNewContributor);
-            this.ribbonComboAddNewItem.DropDownResizable = true;
-            this.ribbonComboAddNewItem.MinSizeMode = System.Windows.Forms.RibbonElementSizeMode.Compact;
-            this.ribbonComboAddNewItem.Text = "Click to add new";
-            this.ribbonComboAddNewItem.TextBoxText = "Click to add new";
-            this.ribbonComboAddNewItem.TextBoxWidth = 130;
+            this.ribbonTimetablesButton.Image = ((System.Drawing.Image)(resources.GetObject("ribbonTimetablesButton.Image")));
+            this.ribbonTimetablesButton.MaximumSize = new System.Drawing.Size(64, 64);
+            this.ribbonTimetablesButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonTimetablesButton.SmallImage")));
+            this.ribbonTimetablesButton.Text = "Calendar";
+            this.ribbonTimetablesButton.Click += new System.EventHandler(this.ribbonTimetablesButton_Click);
             // 
             // ribbonButtonNewStudent
             // 
@@ -258,20 +282,6 @@ namespace GaussLMS.UI
             this.ribbonButtonNewContributor.Text = "New Contributor";
             this.ribbonButtonNewContributor.Click += new System.EventHandler(this.ribbonButtonNewContributor_Click);
             // 
-            // ribbonTabActivities
-            // 
-            this.ribbonTabActivities.Panels.Add(this.ribbonPanelMembership);
-            this.ribbonTabActivities.Panels.Add(this.ribbonPanelZakat);
-            this.ribbonTabActivities.Text = "Activities";
-            // 
-            // ribbonPanelMembership
-            // 
-            this.ribbonPanelMembership.Items.Add(this.ribbonButton5);
-            this.ribbonPanelMembership.Items.Add(this.ribbonButton6);
-            this.ribbonPanelMembership.Items.Add(this.ribbonButton7);
-            this.ribbonPanelMembership.Items.Add(this.ribbonComboBox1);
-            this.ribbonPanelMembership.Text = "Membership";
-            // 
             // ribbonButton5
             // 
             this.ribbonButton5.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton5.Image")));
@@ -289,14 +299,6 @@ namespace GaussLMS.UI
             this.ribbonButton7.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton7.Image")));
             this.ribbonButton7.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton7.SmallImage")));
             this.ribbonButton7.Text = "Event";
-            // 
-            // ribbonComboBox1
-            // 
-            this.ribbonComboBox1.TextBoxText = "";
-            // 
-            // ribbonPanelZakat
-            // 
-            this.ribbonPanelZakat.Text = "Zakat";
             // 
             // ribbonButton3
             // 
@@ -320,18 +322,25 @@ namespace GaussLMS.UI
             this.ribbonButton8.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton8.SmallImage")));
             this.ribbonButton8.Text = "Button1";
             // 
+            // ribbonLessonsButton
+            // 
+            this.ribbonLessonsButton.Image = ((System.Drawing.Image)(resources.GetObject("ribbonLessonsButton.Image")));
+            this.ribbonLessonsButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonLessonsButton.SmallImage")));
+            this.ribbonLessonsButton.Text = "Lessons";
+            this.ribbonLessonsButton.Click += new System.EventHandler(this.ribbonLessonsButton_Click);
+            // 
             // MainMDIForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1131, 593);
+            this.ClientSize = new System.Drawing.Size(848, 482);
             this.Controls.Add(this.ribbon1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainMDIForm";
-            this.Text = "Community Software";
+            this.Text = "Learning Management System";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.MainMDIForm_Load);
@@ -374,7 +383,6 @@ namespace GaussLMS.UI
         private RibbonButton ribbonStudentsButton;
         private RibbonButton ribbonTeachersButton;
         private RibbonButton ribbonParentsButton;
-        private RibbonButton ribbonLessonsButton;
         private RibbonSeparator ribbonSeparator2;
         private RibbonSeparator ribbonSeparator3;
         private RibbonPanel ribbonPanelNewItems;
@@ -384,6 +392,8 @@ namespace GaussLMS.UI
         private RibbonButton ribbonButtonNewStudent;
         private RibbonButton ribbonButtonNewMember;
         private RibbonButton ribbonButtonNewContributor;
+        private RibbonButton ribbonTimetablesButton;
+        private RibbonButton ribbonLessonsButton;
     }
 }
 

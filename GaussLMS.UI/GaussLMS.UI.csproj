@@ -81,6 +81,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\CalendarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CalendarForm.Designer.cs">
+      <DependentUpon>CalendarForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CreateNewContributor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,7 @@
     <Compile Include="Forms\CreateNewMember.Designer.cs">
       <DependentUpon>CreateNewMember.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ItemInfo.cs" />
     <Compile Include="Forms\MosqueForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +150,9 @@
     <Compile Include="WelcomeScreen.Designer.cs">
       <DependentUpon>WelcomeScreen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\CalendarForm.resx">
+      <DependentUpon>CalendarForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CreateNewContributor.resx">
       <DependentUpon>CreateNewContributor.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,6 +236,7 @@
     <Content Include="Images\icon_ok_48.jpg" />
     <Content Include="Images\inbox.jpg" />
     <Content Include="Images\jnsjumahservicejpg.jpg" />
+    <Content Include="Images\Learning Center Gauss.jpg" />
     <Content Include="Images\lessons-icon.png" />
     <Content Include="Images\lessons-icon_48.png" />
     <Content Include="Images\market cube logo.png" />
@@ -247,6 +258,7 @@
     <Content Include="Images\Splash screen.png" />
     <Content Include="Images\teacher_icon.png" />
     <Content Include="Images\teacher_icon_48.png" />
+    <Content Include="Images\timetable-icon-64x64.png" />
     <Content Include="Images\User_icon1.png" />
     <Content Include="Images\Welcome.jpg" />
   </ItemGroup>
@@ -254,6 +266,10 @@
     <ProjectReference Include="..\GaussLMS.Data\GaussLMS.Data.csproj">
       <Project>{c72b43d9-25ff-4521-b1c8-eaee512d2414}</Project>
       <Name>GaussLMS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Windows.Forms.Calendar\System.Windows.Forms.Calendar.csproj">
+      <Project>{25649f08-3046-4891-adb8-7ea787b57063}</Project>
+      <Name>System.Windows.Forms.Calendar</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
